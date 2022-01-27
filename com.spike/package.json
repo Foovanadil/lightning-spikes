@@ -1,0 +1,31 @@
+{
+  "name": "com.spike",
+  "description": "Spikes",
+  "dependencies": {
+    "@lightningjs/core": "2.5.1",
+    "@lightningjs/sdk": "4.6.1",
+    "@lightningjs/ui-components": "^1.2.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@lightningjs/cli": "github:rdkcentral/Lightning-CLI",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1"
+  }
+}
